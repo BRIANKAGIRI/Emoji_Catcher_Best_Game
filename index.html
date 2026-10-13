@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10152f">
+    <title>Brian Emoji Catcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="game-container">
+        <header class="header">
+            <h1>🎮 Brian Emoji Catcher</h1>
+            <p>Catch emojis, collect points, and beat your record!</p>
+        </header>
+
+        <section class="scoreboard" aria-label="Game statistics">
+            <div class="stat">
+                <span>🏆 SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>⏱️ TIME</span>
+                <strong id="time">60</strong>
+            </div>
+
+            <div class="stat">
+                <span>🥇 BEST</span>
+                <strong id="best">0</strong>
+            </div>
+        </section>
+
+        <section id="game-area" aria-label="Emoji catching play area">
+            <div id="emoji-container"></div>
+
+            <div id="player" aria-label="Your emoji catcher">
+                🧺
+            </div>
+
+            <div id="overlay" class="overlay">
+                <div class="welcome-emoji">😎 ⭐ 💎</div>
+                <h2 id="message-title">Ready to Play?</h2>
+                <p id="message-text">
+                    Catch the falling emojis and avoid the bombs!
+                    You have 60 seconds to get the highest score.
+                </p>
+                <button id="start-btn">▶ START GAME</button>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="left-btn" class="move-btn"
+                    aria-label="Move left">⬅️</button>
+
+            <div class="control-instructions">
+                <span>Move your catcher</span>
+                <small>Arrow keys · A / D · Touch controls</small>
+            </div>
+
+            <button id="right-btn" class="move-btn"
+                    aria-label="Move right">➡️</button>
+        </section>
+
+        <div class="action-buttons">
+            <button id="restart-btn">🔄 RESTART GAME</button>
+        </div>
+
+        <footer>
+            <p>⭐ Star +20 &nbsp; ❤️ Heart +10 &nbsp; 💎 Diamond +30</p>
+            <p>💣 Bomb −15 &nbsp; | &nbsp; Made for emoji lovers!</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
